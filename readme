@@ -4,4 +4,5 @@ Dockerized symfony skeleton app + doctrine and assets packages
 Run in your app folder: doctrine-compose up -d --build
 
 For DATABASE_URL (see .env file) you should write the internal IP of your php container: 
-docker inspect <container id> | grep "IPAddress"
+linux: docker inspect <container id> | grep "IPAddress"
+windows: docker exec -it <container id> /bin/bash & cat /etc/hosts
