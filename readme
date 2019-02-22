@@ -1,0 +1,2 @@
+##Change owner of tha shared mysql volumes
+ sudo chown 1000:1000 -R  mysql/mysql_data
